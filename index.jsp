@@ -8,9 +8,10 @@
 </head>
 <body>
  <h1>강의평가</h1>
- <form action="./uwer.JoinAction.jsp" method="post">
+ <form action="./userJoinAction.jsp" method="post">
 	<input type="text" name="userID">
-	<input type="Password" name="Password">
-	<input type="submit" value="sign in">
+	<input type="password" name="userPassword">
+	<input type="Submit" value="sign up">
+</form>	
 </body>
 </html>

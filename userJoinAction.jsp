@@ -24,8 +24,16 @@
 		return;
 	}	
 	UserDAO UserDAO = new UserDAO();
-	int result = UserDAO.join(userID,userPassword);
-	
+	int result = UserDAO.join(userID, userPassword);
+	if(result == 1) {
+		PrintWriter script = response.getWriter();
+		script.println("<script>");
+		script.println("alert('회원가입이 완료되었습니다.');");
+		script.println("location.href='index.jsp';");
+		script.println("</script>");
+		script.close();
+		return;
+	}	
 	
 %>
 
